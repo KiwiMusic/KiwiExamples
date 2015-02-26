@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="gzmbdl" name="ExDspJuce" projectType="consoleapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.JuceExample" includeBinaryInAppConfig="1"
+              jucerVersion="3.1.0">
+  <MAINGROUP id="WDAtBf" name="ExDspJuce">
+    <GROUP id="{EE8C3C6C-7E0B-C748-B2DF-3FE8C603DB16}" name="Source">
+      <FILE id="i0GQVw" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <GROUP id="{E04EC2F0-7BA2-D641-0387-4384A2EB88EF}" name="KiwiModules">
+        <GROUP id="{7D1D5CB1-ED6D-51FA-6C30-5FDE340E7942}" name="KiwiCore">
+          <FILE id="N2WI8S" name="KiwiAtom.cpp" compile="1" resource="0" file="../KiwiModules/KiwiCore/KiwiAtom.cpp"/>
+          <FILE id="Rz0Vp4" name="KiwiAtom.h" compile="0" resource="0" file="../KiwiModules/KiwiCore/KiwiAtom.h"/>
+          <FILE id="uM9I06" name="KiwiBeacon.cpp" compile="1" resource="0" file="../KiwiModules/KiwiCore/KiwiBeacon.cpp"/>
+          <FILE id="oDpADX" name="KiwiBeacon.h" compile="0" resource="0" file="../KiwiModules/KiwiCore/KiwiBeacon.h"/>
+          <FILE id="BPgl8D" name="KiwiClock.cpp" compile="1" resource="0" file="../KiwiModules/KiwiCore/KiwiClock.cpp"/>
+          <FILE id="elNnbQ" name="KiwiClock.h" compile="0" resource="0" file="../KiwiModules/KiwiCore/KiwiClock.h"/>
+          <FILE id="Krp86z" name="KiwiCore.h" compile="0" resource="0" file="../KiwiModules/KiwiCore/KiwiCore.h"/>
+          <FILE id="dJ4XGa" name="KiwiTag.cpp" compile="1" resource="0" file="../KiwiModules/KiwiCore/KiwiTag.cpp"/>
+          <FILE id="vFw1j0" name="KiwiTag.h" compile="0" resource="0" file="../KiwiModules/KiwiCore/KiwiTag.h"/>
+          <FILE id="Ke21u6" name="KiwiTools.h" compile="0" resource="0" file="../KiwiModules/KiwiCore/KiwiTools.h"/>
+          <FILE id="ut4ocA" name="LICENSE" compile="0" resource="1" file="../KiwiModules/KiwiCore/LICENSE"/>
+          <FILE id="pVAR6u" name="README.md" compile="0" resource="1" file="../KiwiModules/KiwiCore/README.md"/>
+        </GROUP>
+        <GROUP id="{D3203A1B-16C4-6F9B-7407-A30BFC720928}" name="KiwiDsp">
+          <FILE id="R6ADL1" name="KiwiDsp.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDsp.h"/>
+          <GROUP id="{98515351-4810-2EE2-4839-AB46570106B3}" name="KiwiDspModels">
+            <FILE id="LBUhT3" name="KiwiDspChain.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspChain.cpp"/>
+            <FILE id="lklgO4" name="KiwiDspChain.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspChain.h"/>
+            <FILE id="dsbNrf" name="KiwiDspContext.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspContext.cpp"/>
+            <FILE id="PiSi0Q" name="KiwiDspContext.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspContext.h"/>
+            <FILE id="ljtNpd" name="KiwiDspDevice.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspDevice.cpp"/>
+            <FILE id="FRuVjI" name="KiwiDspDevice.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspDevice.h"/>
+            <FILE id="PGX3y3" name="KiwiDspError.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspError.h"/>
+            <FILE id="JuzGnc" name="KiwiDspIoput.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspIoput.cpp"/>
+            <FILE id="Cl20Wh" name="KiwiDspIoput.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspIoput.h"/>
+            <FILE id="a3TIoF" name="KiwiDspModels.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspModels.h"/>
+            <FILE id="TSUqfr" name="KiwiDspNode.cpp" compile="1" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspNode.cpp"/>
+            <FILE id="dcFjNJ" name="KiwiDspNode.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspNode.h"/>
+            <FILE id="gUuizj" name="KiwiDspSignal.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModels/KiwiDspSignal.h"/>
+          </GROUP>
+          <GROUP id="{7D7CC30D-2779-5CAB-FB0F-B4BFD8E85641}" name="KiwiDspModules">
+            <FILE id="g2h7cY" name="KiwiDspGenerator.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiDsp/KiwiDspModules/KiwiDspGenerator.cpp"/>
+            <FILE id="JXHOwY" name="KiwiDspGenerator.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiDsp/KiwiDspModules/KiwiDspGenerator.h"/>
+            <FILE id="xjVNuc" name="KiwiDspIo.cpp" compile="1" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModules/KiwiDspIo.cpp"/>
+            <FILE id="ndlru9" name="KiwiDspIo.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModules/KiwiDspIo.h"/>
+            <FILE id="govnUf" name="KiwiDspMath.cpp" compile="1" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModules/KiwiDspMath.cpp"/>
+            <FILE id="X54MDT" name="KiwiDspMath.h" compile="0" resource="0" file="../KiwiModules/KiwiDsp/KiwiDspModules/KiwiDspMath.h"/>
+            <FILE id="PwDmsE" name="KiwiDspModules.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiDsp/KiwiDspModules/KiwiDspModules.h"/>
+          </GROUP>
+          <FILE id="I3iGzq" name="LICENSE" compile="0" resource="1" file="../KiwiModules/KiwiDsp/LICENSE"/>
+          <FILE id="YHFXz1" name="README.md" compile="0" resource="1" file="../KiwiModules/KiwiDsp/README.md"/>
+        </GROUP>
+        <GROUP id="{80973A39-F514-8B3D-C131-32FF182DDBE0}" name="KiwiGui">
+          <GROUP id="{46A8994D-490A-E480-864F-9118BDDCF4F1}" name="Attributes">
+            <FILE id="N1wiTf" name="Attribute.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Attributes/Attribute.cpp"/>
+            <FILE id="apnYyV" name="Attribute.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Attributes/Attribute.h"/>
+            <FILE id="dMpta2" name="Attributes.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Attributes/Attributes.h"/>
+            <FILE id="GXtP00" name="Default.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Attributes/Default.cpp"/>
+            <FILE id="jKuNTm" name="Default.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Attributes/Default.h"/>
+            <FILE id="BqPYuy" name="Graphic.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Attributes/Graphic.cpp"/>
+            <FILE id="NcUlav" name="Graphic.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Attributes/Graphic.h"/>
+          </GROUP>
+          <GROUP id="{0515967A-0A1D-AAEC-957A-BF255085C31A}" name="Graphics">
+            <FILE id="Y3wgmi" name="Color.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Graphics/Color.cpp"/>
+            <FILE id="v93JqL" name="Color.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Graphics/Color.h"/>
+            <FILE id="fYxGKp" name="Font.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Graphics/Font.cpp"/>
+            <FILE id="LP0C6q" name="Font.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Graphics/Font.h"/>
+            <FILE id="Oq2g5z" name="Graphics.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Graphics/Graphics.h"/>
+            <FILE id="NIoLUv" name="Path.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Graphics/Path.cpp"/>
+            <FILE id="HgUaDO" name="Path.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Graphics/Path.h"/>
+            <FILE id="BmGuxX" name="Point.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Graphics/Point.cpp"/>
+            <FILE id="BzHyVs" name="Point.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Graphics/Point.h"/>
+            <FILE id="CCZJXa" name="Rectangle.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Graphics/Rectangle.cpp"/>
+            <FILE id="pn5Hxo" name="Rectangle.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Graphics/Rectangle.h"/>
+            <FILE id="S7F96z" name="TextLayout.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Graphics/TextLayout.cpp"/>
+            <FILE id="XYn3OA" name="TextLayout.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Graphics/TextLayout.h"/>
+          </GROUP>
+          <FILE id="PNsyQD" name="KiwiGui.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/KiwiGui.h"/>
+          <GROUP id="{8C2F918E-D5E1-91D0-8CFE-28CC553F8512}" name="Models">
+            <FILE id="RMHNia" name="Keyboarder.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Models/Keyboarder.cpp"/>
+            <FILE id="xUEQDV" name="Keyboarder.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Models/Keyboarder.h"/>
+            <FILE id="qG4O1M" name="Models.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Models/Models.h"/>
+            <FILE id="omAA16" name="Mouser.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Models/Mouser.cpp"/>
+            <FILE id="FxbHx9" name="Mouser.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Models/Mouser.h"/>
+            <FILE id="kmIaC1" name="Sketcher.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Models/Sketcher.cpp"/>
+            <FILE id="CcreJo" name="Sketcher.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Models/Sketcher.h"/>
+            <FILE id="JA1bZa" name="Writer.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Models/Writer.cpp"/>
+            <FILE id="jjd7WK" name="Writer.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Models/Writer.h"/>
+          </GROUP>
+          <GROUP id="{B922CC8C-3A90-1D2C-D725-739C062B141A}" name="Modules">
+            <FILE id="OIqgKg" name="Classic.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Modules/Classic.cpp"/>
+            <FILE id="uooc0N" name="Classic.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Modules/Classic.h"/>
+            <FILE id="IFEJeK" name="Major.cpp" compile="1" resource="0" file="../KiwiModules/KiwiGui/Modules/Major.cpp"/>
+            <FILE id="fflVwK" name="Major.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Modules/Major.h"/>
+            <FILE id="eB7xMg" name="Modules.h" compile="0" resource="0" file="../KiwiModules/KiwiGui/Modules/Modules.h"/>
+          </GROUP>
+          <FILE id="FYXrD1" name="README.md" compile="0" resource="1" file="../KiwiModules/KiwiGui/README.md"/>
+        </GROUP>
+        <FILE id="ObsMD2" name="KiwiModules.h" compile="0" resource="0" file="../KiwiModules/KiwiModules.h"/>
+        <GROUP id="{5A7662BD-0D87-C3FA-1718-72EF703EC2A0}" name="KiwiObjects">
+          <FILE id="mzIQ1P" name="KiwiObjects.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjects.h"/>
+          <GROUP id="{FE45CED1-D297-6AAB-AF73-6834B0EE7C6D}" name="KiwiObjectsBasic">
+            <FILE id="ARyXxo" name="KiwiObjectsBasic.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsBasic/KiwiObjectsBasic.h"/>
+            <FILE id="Burmaj" name="KiwiObjectsBasicDefault.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsBasic/KiwiObjectsBasicDefault.cpp"/>
+            <FILE id="vJKqzN" name="KiwiObjectsBasicDefault.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsBasic/KiwiObjectsBasicDefault.h"/>
+          </GROUP>
+          <GROUP id="{B3CC1CA3-AF0A-4970-9585-7F460294A33A}" name="KiwiObjectsDraft">
+            <FILE id="yJxeuL" name="Arithmetic.cpp" compile="1" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Arithmetic.cpp"/>
+            <FILE id="o9LCEm" name="Arithmetic.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Arithmetic.h"/>
+            <FILE id="TqYaWz" name="ArithmeticTilde.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/ArithmeticTilde.cpp"/>
+            <FILE id="bBHzpJ" name="ArithmeticTilde.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/ArithmeticTilde.h"/>
+            <FILE id="NL4vGr" name="DspGenerator.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/DspGenerator.cpp"/>
+            <FILE id="J4xxYo" name="DspGenerator.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/DspGenerator.h"/>
+            <FILE id="o55fYs" name="DspMisc.cpp" compile="1" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/DspMisc.cpp"/>
+            <FILE id="f0Z4HO" name="DspMisc.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/DspMisc.h"/>
+            <FILE id="Zntps3" name="Time.cpp" compile="1" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Time.cpp"/>
+            <FILE id="BclsWH" name="Time.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Time.h"/>
+            <FILE id="sbH7a5" name="Wireless.cpp" compile="1" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Wireless.cpp"/>
+            <FILE id="RFkbei" name="Wireless.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Wireless.h"/>
+          </GROUP>
+          <GROUP id="{581E6216-A351-2CEF-C5CD-E9535B7ED5E5}" name="KiwiObjectsDsp">
+            <FILE id="uRPXCa" name="KiwiObjectsDsp.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsDsp/KiwiObjectsDsp.h"/>
+            <FILE id="Z7LXdE" name="KiwiObjectsDspGenerator.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsDsp/KiwiObjectsDspGenerator.cpp"/>
+            <FILE id="AJKWrD" name="KiwiObjectsDspGenerator.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsDsp/KiwiObjectsDspGenerator.h"/>
+            <FILE id="GNfgmb" name="KiwiObjectsDspIo.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsDsp/KiwiObjectsDspIo.cpp"/>
+            <FILE id="aSqGFA" name="KiwiObjectsDspIo.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsDsp/KiwiObjectsDspIo.h"/>
+          </GROUP>
+          <GROUP id="{8F533859-3FEC-5B55-33FD-4AC8AE2C7B37}" name="KiwiObjectsGui">
+            <FILE id="jcIFGV" name="KiwiObjectsGui.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsGui/KiwiObjectsGui.h"/>
+            <FILE id="k6NH55" name="KiwiObjectsGuiClassic.cpp" compile="1" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsGui/KiwiObjectsGuiClassic.cpp"/>
+            <FILE id="ReG9iP" name="KiwiObjectsGuiClassic.h" compile="0" resource="0"
+                  file="../KiwiModules/KiwiObjects/KiwiObjectsGui/KiwiObjectsGuiClassic.h"/>
+          </GROUP>
+          <FILE id="mCGASN" name="README.md" compile="0" resource="1" file="../KiwiModules/KiwiObjects/README.md"/>
+        </GROUP>
+        <GROUP id="{930C36D0-AB9D-4BB3-53F2-58D88987B795}" name="KiwiPatcher">
+          <FILE id="Yy1bup" name="KiwiConsole.cpp" compile="1" resource="0" file="../KiwiModules/KiwiPatcher/KiwiConsole.cpp"/>
+          <FILE id="uRRC7L" name="KiwiConsole.h" compile="0" resource="0" file="../KiwiModules/KiwiPatcher/KiwiConsole.h"/>
+          <FILE id="gXWwlE" name="KiwiInstance.cpp" compile="1" resource="0"
+                file="../KiwiModules/KiwiPatcher/KiwiInstance.cpp"/>
+          <FILE id="rDMryn" name="KiwiInstance.h" compile="0" resource="0" file="../KiwiModules/KiwiPatcher/KiwiInstance.h"/>
+          <FILE id="nNvcuX" name="KiwiLink.cpp" compile="1" resource="0" file="../KiwiModules/KiwiPatcher/KiwiLink.cpp"/>
+          <FILE id="Njaoun" name="KiwiLink.h" compile="0" resource="0" file="../KiwiModules/KiwiPatcher/KiwiLink.h"/>
+          <FILE id="MB7kO0" name="KiwiObject.cpp" compile="1" resource="0" file="../KiwiModules/KiwiPatcher/KiwiObject.cpp"/>
+          <FILE id="IkboEA" name="KiwiObject.h" compile="0" resource="0" file="../KiwiModules/KiwiPatcher/KiwiObject.h"/>
+          <FILE id="gH9zbK" name="KiwiPatch.cpp" compile="1" resource="0" file="../KiwiModules/KiwiPatcher/KiwiPatch.cpp"/>
+          <FILE id="ddRXus" name="KiwiPatch.h" compile="0" resource="0" file="../KiwiModules/KiwiPatcher/KiwiPatch.h"/>
+          <FILE id="cElZJA" name="KiwiPatcher.h" compile="0" resource="0" file="../KiwiModules/KiwiPatcher/KiwiPatcher.h"/>
+          <FILE id="YBZ8OI" name="LICENSE" compile="0" resource="1" file="../KiwiModules/KiwiPatcher/LICENSE"/>
+          <FILE id="ecWfHC" name="README.md" compile="0" resource="1" file="../KiwiModules/KiwiPatcher/README.md"/>
+        </GROUP>
+        <GROUP id="{955B93A8-EF44-9AD6-63FD-DD8D853BE507}" name="KiwiWrapper">
+          <FILE id="DRrTxi" name="KiwiDspJuce.cpp" compile="1" resource="0" file="../KiwiModules/KiwiWrapper/KiwiDspJuce.cpp"/>
+          <FILE id="LUX4hZ" name="KiwiDspJuce.h" compile="0" resource="0" file="../KiwiModules/KiwiWrapper/KiwiDspJuce.h"/>
+          <FILE id="r3Lz1G" name="KiwiDspPortAudio.cpp" compile="1" resource="0"
+                file="../KiwiModules/KiwiWrapper/KiwiDspPortAudio.cpp"/>
+          <FILE id="CKiYp4" name="KiwiDspPortAudio.h" compile="0" resource="0"
+                file="../KiwiModules/KiwiWrapper/KiwiDspPortAudio.h"/>
+          <FILE id="faY9iD" name="KiwiWrapper.h" compile="0" resource="0" file="../KiwiModules/KiwiWrapper/KiwiWrapper.h"/>
+          <FILE id="MsXqb6" name="LICENSE" compile="0" resource="1" file="../KiwiModules/KiwiWrapper/LICENSE"/>
+          <FILE id="AsNWCe" name="README.md" compile="0" resource="1" file="../KiwiModules/KiwiWrapper/README.md"/>
+        </GROUP>
+        <FILE id="f9ErGG" name="LICENSE" compile="0" resource="1" file="../KiwiModules/LICENSE"/>
+        <FILE id="GiYscY" name="README.md" compile="0" resource="1" file="../KiwiModules/README.md"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="JuceExample" defines="__KIWI_JUCE_WRAPPER__"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="2" targetName="JuceExample" defines="__KIWI_JUCE_WRAPPER__"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_devices" path="../ThirdParty/Juce/modules"/>
+        <MODULEPATH id="juce_core" path="../ThirdParty/Juce/modules"/>
+        <MODULEPATH id="juce_events" path="../ThirdParty/Juce/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../ThirdParty/Juce/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../ThirdParty/Juce/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
