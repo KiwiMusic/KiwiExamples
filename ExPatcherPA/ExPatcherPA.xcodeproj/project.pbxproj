@@ -625,7 +625,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					../ThirdParty/PortAudio/include/,
 				);
-				INSTALL_PATH = ./KiwiCoreExample/Build/Debug/;
+				INSTALL_PATH = ./ExPatcherPA/Build/Debug/;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../ThirdParty/PortAudio/lib/.libs,
@@ -633,7 +633,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ExPatcherPA;
-				SYMROOT = ./KiwiCoreExample/Build/Debug/;
+				SYMROOT = ./ExPatcherPA/Build/Debug/;
 			};
 			name = Debug;
 		};
@@ -647,7 +647,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					../ThirdParty/PortAudio/include/,
 				);
-				INSTALL_PATH = ./KiwiCoreExample/Build/Release/;
+				INSTALL_PATH = ./ExPatcherPA/Build/Release/;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../ThirdParty/PortAudio/lib/.libs,
@@ -655,7 +655,7 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ExPatcherPA;
-				SYMROOT = ./KiwiCoreExample/Build/Release/;
+				SYMROOT = ./ExPatcherPA/Build/Release/;
 			};
 			name = Release;
 		};
