@@ -115,23 +115,6 @@
             <FILE id="vJKqzN" name="KiwiObjectsBasicDefault.h" compile="0" resource="0"
                   file="../KiwiModules/KiwiObjects/KiwiObjectsBasic/KiwiObjectsBasicDefault.h"/>
           </GROUP>
-          <GROUP id="{B3CC1CA3-AF0A-4970-9585-7F460294A33A}" name="KiwiObjectsDraft">
-            <FILE id="yJxeuL" name="Arithmetic.cpp" compile="1" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Arithmetic.cpp"/>
-            <FILE id="o9LCEm" name="Arithmetic.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Arithmetic.h"/>
-            <FILE id="TqYaWz" name="ArithmeticTilde.cpp" compile="1" resource="0"
-                  file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/ArithmeticTilde.cpp"/>
-            <FILE id="bBHzpJ" name="ArithmeticTilde.h" compile="0" resource="0"
-                  file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/ArithmeticTilde.h"/>
-            <FILE id="NL4vGr" name="DspGenerator.cpp" compile="1" resource="0"
-                  file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/DspGenerator.cpp"/>
-            <FILE id="J4xxYo" name="DspGenerator.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/DspGenerator.h"/>
-            <FILE id="o55fYs" name="DspMisc.cpp" compile="1" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/DspMisc.cpp"/>
-            <FILE id="f0Z4HO" name="DspMisc.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/DspMisc.h"/>
-            <FILE id="Zntps3" name="Time.cpp" compile="1" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Time.cpp"/>
-            <FILE id="BclsWH" name="Time.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Time.h"/>
-            <FILE id="sbH7a5" name="Wireless.cpp" compile="1" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Wireless.cpp"/>
-            <FILE id="RFkbei" name="Wireless.h" compile="0" resource="0" file="../KiwiModules/KiwiObjects/KiwiObjectsDraft/Wireless.h"/>
-          </GROUP>
           <GROUP id="{581E6216-A351-2CEF-C5CD-E9535B7ED5E5}" name="KiwiObjectsDsp">
             <FILE id="uRPXCa" name="KiwiObjectsDsp.h" compile="0" resource="0"
                   file="../KiwiModules/KiwiObjects/KiwiObjectsDsp/KiwiObjectsDsp.h"/>
