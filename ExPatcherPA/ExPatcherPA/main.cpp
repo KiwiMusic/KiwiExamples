@@ -8,14 +8,14 @@
 
 #include <iostream>
 
-#include "../../KiwiModules/KiwiPatcher/Console.h"
-#include "../../KiwiModules/KiwiDsp/Implementation/DspPortAudio.h"
+#include "../../KiwiModules/KiwiPatcher/KiwiPatcher.h"
+#include "../../KiwiModules/KiwiWrapper/KiwiDspPortAudio.h"
 
 using namespace Kiwi;
 
 int main(int argc, const char * argv[])
 {
-    sDspDeviceManager manager = make_shared<PortAudioDeviceManager>();    
+    sDspDeviceManager manager = make_shared<KiwiPortAudioDeviceManager>();    
     if(manager)
     {
         Console::device = manager;
