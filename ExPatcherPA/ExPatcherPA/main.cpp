@@ -8,8 +8,7 @@
 
 #include <iostream>
 
-#include "../../KiwiModules/KiwiPatcher/KiwiPatcher.h"
-#include "../../KiwiModules/KiwiWrapper/KiwiDspPortAudio.h"
+#include "../../KiwiModules/KiwiModules.h"
 
 using namespace Kiwi;
 
