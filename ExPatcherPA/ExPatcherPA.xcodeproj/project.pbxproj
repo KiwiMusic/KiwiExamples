@@ -13,7 +13,6 @@
 		8F19E75E1A973003003CE222 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F19E75B1A973003003CE222 /* CoreAudio.framework */; };
 		8F19E7601A97301A003CE222 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F19E75F1A97301A003CE222 /* CoreAudioKit.framework */; };
 		8F41B50C1A7E3C990067E122 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F41B50B1A7E3C990067E122 /* Accelerate.framework */; };
-		8F73A7271A9EFFC000B38565 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F73A7261A9EFFC000B38565 /* main.cpp */; };
 		8F73A7B31A9EFFCB00B38565 /* KiwiAtom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F73A72C1A9EFFCA00B38565 /* KiwiAtom.cpp */; };
 		8F73A7B41A9EFFCB00B38565 /* KiwiBeacon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F73A72E1A9EFFCA00B38565 /* KiwiBeacon.cpp */; };
 		8F73A7B51A9EFFCB00B38565 /* KiwiClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F73A7301A9EFFCA00B38565 /* KiwiClock.cpp */; };
@@ -53,6 +52,7 @@
 		8FA92C401A9F2AED006BAFC5 /* KiwiObjectsDspIo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA92C381A9F2AED006BAFC5 /* KiwiObjectsDspIo.cpp */; };
 		8FA92C411A9F2AED006BAFC5 /* KiwiObjectsGuiClassic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA92C3B1A9F2AED006BAFC5 /* KiwiObjectsGuiClassic.cpp */; };
 		8FA92C461A9F2C76006BAFC5 /* KiwiObjectsBasicDefault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA92C441A9F2C76006BAFC5 /* KiwiObjectsBasicDefault.cpp */; };
+		8FD469691A9F646C00EC3487 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FD469681A9F646C00EC3487 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,7 +75,6 @@
 		8F19E75F1A97301A003CE222 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		8F41B4611A7E3C640067E122 /* ExPatcherPA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExPatcherPA; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F41B50B1A7E3C990067E122 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		8F73A7261A9EFFC000B38565 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8F73A72C1A9EFFCA00B38565 /* KiwiAtom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KiwiAtom.cpp; sourceTree = "<group>"; };
 		8F73A72D1A9EFFCA00B38565 /* KiwiAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiAtom.h; sourceTree = "<group>"; };
 		8F73A72E1A9EFFCA00B38565 /* KiwiBeacon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KiwiBeacon.cpp; sourceTree = "<group>"; };
@@ -172,6 +171,7 @@
 		8FA92C451A9F2C76006BAFC5 /* KiwiObjectsBasicDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiObjectsBasicDefault.h; sourceTree = "<group>"; };
 		8FA92C471A9F2DC3006BAFC5 /* KiwiModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiModules.h; sourceTree = "<group>"; };
 		8FA92C481A9F2E12006BAFC5 /* KiwiWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiWrapper.h; sourceTree = "<group>"; };
+		8FD469681A9F646C00EC3487 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +202,7 @@
 				8F19E75B1A973003003CE222 /* CoreAudio.framework */,
 				8F19E7571A972FF8003CE222 /* Carbon.framework */,
 				8F41B50B1A7E3C990067E122 /* Accelerate.framework */,
-				8F73A7251A9EFFC000B38565 /* ExPatcherPA */,
+				8FD469671A9F646C00EC3487 /* Sources */,
 				8F41B4621A7E3C640067E122 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -213,15 +213,6 @@
 				8F41B4611A7E3C640067E122 /* ExPatcherPA */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8F73A7251A9EFFC000B38565 /* ExPatcherPA */ = {
-			isa = PBXGroup;
-			children = (
-				8F73A7261A9EFFC000B38565 /* main.cpp */,
-				8F73A7281A9EFFCA00B38565 /* KiwiModules */,
-			);
-			path = ExPatcherPA;
 			sourceTree = "<group>";
 		};
 		8F73A7281A9EFFCA00B38565 /* KiwiModules */ = {
@@ -447,6 +438,15 @@
 			path = KiwiObjectsBasic;
 			sourceTree = "<group>";
 		};
+		8FD469671A9F646C00EC3487 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8FD469681A9F646C00EC3487 /* main.cpp */,
+				8F73A7281A9EFFCA00B38565 /* KiwiModules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -534,13 +534,13 @@
 				8F73A7B51A9EFFCB00B38565 /* KiwiClock.cpp in Sources */,
 				8F73A7CE1A9EFFCB00B38565 /* Mouser.cpp in Sources */,
 				8F73A7C51A9EFFCB00B38565 /* Graphic.cpp in Sources */,
-				8F73A7271A9EFFC000B38565 /* main.cpp in Sources */,
 				8F73A7CC1A9EFFCB00B38565 /* TextLayout.cpp in Sources */,
 				8F73A7CB1A9EFFCB00B38565 /* Rectangle.cpp in Sources */,
 				8F73A8191A9F109E00B38565 /* KiwiDspChain.cpp in Sources */,
 				8F73A7CF1A9EFFCB00B38565 /* Sketcher.cpp in Sources */,
 				8FA92C3F1A9F2AED006BAFC5 /* KiwiObjectsDspGenerator.cpp in Sources */,
 				8F73A7E01A9EFFCB00B38565 /* KiwiInstance.cpp in Sources */,
+				8FD469691A9F646C00EC3487 /* main.cpp in Sources */,
 				8F73A7D11A9EFFCB00B38565 /* Classic.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
