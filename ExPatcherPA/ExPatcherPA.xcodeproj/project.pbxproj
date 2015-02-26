@@ -615,7 +615,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEPLOYMENT_LOCATION = NO;
-				EXECUTABLE_EXTENSION = .exe;
+				EXECUTABLE_EXTENSION = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -626,7 +626,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					../ThirdParty/PortAudio/include/,
 				);
-				INSTALL_PATH = ./ExPatcherPA/Build/Debug/;
+				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../ThirdParty/PortAudio/lib/.libs,
@@ -634,8 +634,8 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ExPatcherPA;
-				SYMROOT = ./ExPatcherPA/Build/Debug/;
-				WRAPPER_EXTENSION = .exe;
+				SYMROOT = build;
+				WRAPPER_EXTENSION = "";
 			};
 			name = Debug;
 		};
@@ -644,13 +644,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEPLOYMENT_LOCATION = NO;
-				EXECUTABLE_EXTENSION = .exe;
+				EXECUTABLE_EXTENSION = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					../ThirdParty/PortAudio/include/,
 				);
-				INSTALL_PATH = ./ExPatcherPA/Build/Release/;
+				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../ThirdParty/PortAudio/lib/.libs,
@@ -658,8 +658,8 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ExPatcherPA;
-				SYMROOT = ./ExPatcherPA/Build/Release/;
-				WRAPPER_EXTENSION = .exe;
+				SYMROOT = build;
+				WRAPPER_EXTENSION = "";
 			};
 			name = Release;
 		};
