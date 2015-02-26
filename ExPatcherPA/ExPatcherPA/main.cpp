@@ -22,7 +22,7 @@ int main(int argc, const char * argv[])
         manager->setSampleRate(44100);
         manager->setVectorSize(64);
         cout << "Port Audio Device : Sample Rate (" << manager->getSampleRate() << ") Vector Size (" << manager->getVectorSize() << ")" << endl;
-        
+        int zaza;
         while(1)
         {
             string input;

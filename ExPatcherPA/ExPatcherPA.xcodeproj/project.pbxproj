@@ -615,6 +615,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEPLOYMENT_LOCATION = NO;
+				EXECUTABLE_EXTENSION = .exe;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -634,6 +635,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ExPatcherPA;
 				SYMROOT = ./ExPatcherPA/Build/Debug/;
+				WRAPPER_EXTENSION = .exe;
 			};
 			name = Debug;
 		};
@@ -642,6 +644,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEPLOYMENT_LOCATION = NO;
+				EXECUTABLE_EXTENSION = .exe;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -656,6 +659,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ExPatcherPA;
 				SYMROOT = ./ExPatcherPA/Build/Release/;
+				WRAPPER_EXTENSION = .exe;
 			};
 			name = Release;
 		};
