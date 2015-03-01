@@ -12,84 +12,34 @@
 
 using namespace Kiwi;
 
-
-static void post_atom(Atom const& atom)
-{
-    if(atom.isBool())
-    {
-        if((bool)atom)
-            cout << "true";
-        else
-            cout << "false";
-    }
-    else if(atom.isLong())
-    {
-        cout << (long)atom;
-    }
-    else if(atom.isDouble())
-    {
-        cout << (double)atom;
-    }
-    else if(atom.isTag())
-    {
-        cout << ((sTag)atom)->getName();
-    }
-    else if(atom.isVector())
-    {
-        Vector const& vec = atom;
-        cout << "{";
-        for(Vector::size_type i = 0; i < vec.size();)
-        {
-            post_atom(vec[i]);
-            if(++i != vec.size())
-            {
-                cout << ", ";
-            }
-        }
-        cout << "}";
-    }
-    else if(atom.isDico())
-    {
-        Dico const& dico = atom;
-        cout << "{";
-        for(auto it = dico.begin(); it != dico.end();)
-        {
-            cout << it->first->getName() << " : ";
-            post_atom(it->second);
-            if(++it != dico.end())
-            {
-                cout << ", ";
-            }
-        }
-        cout << "}";
-    }
-    else
-    {
-        cout << "Undefinded";
-    }
-}
-
 int main(int argc, const char * argv[])
 {
+    Dico bef;
+    bef[Tag::create("b1")] = 1;
+    bef[Tag::create("b2")] = 1;
+    bef[Tag::create("b3")] = 3;
     Dico dic;
     dic[Tag::create("e1")] = "Pierre";
     dic[Tag::create("e2")] = 12;
     dic[Tag::create("e3")] = "Jack";
     dic[Tag::create("e4")] = 1.3;
-    dic[Tag::create("e5")] = {9, 8, 7};
-    dic[Tag::create("e6")] = "Paul";
+    Dico bof;
+    bof[Tag::create("e5")] = {9, 8, 7};
+    bof[Tag::create("e6")] = "Paul";
+    bof[Tag::create("e7")] = bef;
     
-    Atom zaza({"zaza", 12.3, 4, Tag::create("zizi"), true, {1.3f, false, 16l, "zozo"}, 1, 2, 3, dic, "end"});
-    post_atom(zaza);
-    cout << endl;
+    Atom zaza({"zaza", 12.3000, 4, Tag::create("zizi"), true, {1.3f, false, 16l, "zozo"}, 1, 2, 3, dic, "end"});
+    cout << zaza << endl << endl << endl;
     
     Dico::value_type p(Tag::create("funk"), "funcku");
     Dico dic2;
     dic2.insert(p);
     Vector& vec = zaza;
     vec.push_back(dic2);
-    post_atom(zaza);
-    cout << endl;
+    cout << zaza << endl << endl << endl;
+    
+    zaza = {bef, dic, bof};
+    cout << zaza << endl << endl << endl;
     
     return 0;
     
