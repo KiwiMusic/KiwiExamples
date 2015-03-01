@@ -19,7 +19,7 @@ int main(int argc, const char * argv[])
     bef[Tag::create("b2")] = 1;
     bef[Tag::create("b3")] = 3;
     Dico dic;
-    dic[Tag::create("e1")] = "Pierre";
+    dic[Tag::create("e1")] = "Pierre et \"Too\" zaza\nzaza";
     dic[Tag::create("e2")] = 12;
     dic[Tag::create("e3")] = "Jack";
     dic[Tag::create("e4")] = 1.3;
