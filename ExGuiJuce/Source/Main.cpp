@@ -11,7 +11,6 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "MainComponent.h"
 
-
 //==============================================================================
 class ExGuiJuceApplication  : public JUCEApplication
 {

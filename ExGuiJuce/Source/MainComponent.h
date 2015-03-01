@@ -17,7 +17,7 @@
     This component lives inside our window, and this is where you should put all
     your controls and content.
 */
-class MainContentComponent   : public Component
+class MainContentComponent   : public juce::Component
 {
 public:
     //==============================================================================
