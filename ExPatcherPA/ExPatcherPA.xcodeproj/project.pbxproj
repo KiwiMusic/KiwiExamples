@@ -23,12 +23,12 @@
 		2CAB5A011AAA3BEA00CB89D2 /* KiwiGuiLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB59DB1AAA3BEA00CB89D2 /* KiwiGuiLink.cpp */; };
 		2CAB5A021AAA3BEA00CB89D2 /* KiwiGuiObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB59DE1AAA3BEA00CB89D2 /* KiwiGuiObject.cpp */; };
 		2CAB5A031AAA3BEA00CB89D2 /* KiwiGuiPatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB59E01AAA3BEA00CB89D2 /* KiwiGuiPatcher.cpp */; };
-		2CAB5A041AAA3BEA00CB89D2 /* KiwiGuiPatcherManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB59E21AAA3BEA00CB89D2 /* KiwiGuiPatcherManager.cpp */; };
 		2CAB5A051AAA3BEA00CB89D2 /* KiwiGuiClassic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB59E51AAA3BEA00CB89D2 /* KiwiGuiClassic.cpp */; };
 		2CAB5A061AAA3BEA00CB89D2 /* KiwiGuiMajor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB59E71AAA3BEA00CB89D2 /* KiwiGuiMajor.cpp */; };
 		2CAB5A071AAA3BEA00CB89D2 /* KiwiLinkView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB59ED1AAA3BEA00CB89D2 /* KiwiLinkView.cpp */; };
 		2CAB5A081AAA3BEA00CB89D2 /* KiwiObjectView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB59EF1AAA3BEA00CB89D2 /* KiwiObjectView.cpp */; };
 		2CAB5A091AAA3BEA00CB89D2 /* KiwiPatcherView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB59F11AAA3BEA00CB89D2 /* KiwiPatcherView.cpp */; };
+		2CAB5A0D1AAA463400CB89D2 /* KiwiGuiPatchManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB5A0B1AAA463400CB89D2 /* KiwiGuiPatchManager.cpp */; };
 		8F19E7581A972FF8003CE222 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F19E7571A972FF8003CE222 /* Carbon.framework */; };
 		8F19E75C1A973003003CE222 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F19E7591A973003003CE222 /* AudioToolbox.framework */; };
 		8F19E75D1A973003003CE222 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F19E75A1A973003003CE222 /* AudioUnit.framework */; };
@@ -112,8 +112,6 @@
 		2CAB59DF1AAA3BEA00CB89D2 /* KiwiGuiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiGuiObject.h; sourceTree = "<group>"; };
 		2CAB59E01AAA3BEA00CB89D2 /* KiwiGuiPatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KiwiGuiPatcher.cpp; sourceTree = "<group>"; };
 		2CAB59E11AAA3BEA00CB89D2 /* KiwiGuiPatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiGuiPatcher.h; sourceTree = "<group>"; };
-		2CAB59E21AAA3BEA00CB89D2 /* KiwiGuiPatcherManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KiwiGuiPatcherManager.cpp; sourceTree = "<group>"; };
-		2CAB59E31AAA3BEA00CB89D2 /* KiwiGuiPatcherManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiGuiPatcherManager.h; sourceTree = "<group>"; };
 		2CAB59E51AAA3BEA00CB89D2 /* KiwiGuiClassic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KiwiGuiClassic.cpp; sourceTree = "<group>"; };
 		2CAB59E61AAA3BEA00CB89D2 /* KiwiGuiClassic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiGuiClassic.h; sourceTree = "<group>"; };
 		2CAB59E71AAA3BEA00CB89D2 /* KiwiGuiMajor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KiwiGuiMajor.cpp; sourceTree = "<group>"; };
@@ -127,6 +125,8 @@
 		2CAB59F01AAA3BEA00CB89D2 /* KiwiObjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiObjectView.h; sourceTree = "<group>"; };
 		2CAB59F11AAA3BEA00CB89D2 /* KiwiPatcherView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KiwiPatcherView.cpp; sourceTree = "<group>"; };
 		2CAB59F21AAA3BEA00CB89D2 /* KiwiPatcherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiPatcherView.h; sourceTree = "<group>"; };
+		2CAB5A0B1AAA463400CB89D2 /* KiwiGuiPatchManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KiwiGuiPatchManager.cpp; sourceTree = "<group>"; };
+		2CAB5A0C1AAA463400CB89D2 /* KiwiGuiPatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiwiGuiPatchManager.h; sourceTree = "<group>"; };
 		8F19E7571A972FF8003CE222 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		8F19E7591A973003003CE222 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8F19E75A1A973003003CE222 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
@@ -281,8 +281,6 @@
 		2CAB59D81AAA3BEA00CB89D2 /* KiwiGuiModels */ = {
 			isa = PBXGroup;
 			children = (
-				2CAB59D91AAA3BEA00CB89D2 /* KiwiGuiDevice.cpp */,
-				2CAB59DA1AAA3BEA00CB89D2 /* KiwiGuiDevice.h */,
 				2CAB59DB1AAA3BEA00CB89D2 /* KiwiGuiLink.cpp */,
 				2CAB59DC1AAA3BEA00CB89D2 /* KiwiGuiLink.h */,
 				2CAB59DD1AAA3BEA00CB89D2 /* KiwiGuiModels.h */,
@@ -290,8 +288,10 @@
 				2CAB59DF1AAA3BEA00CB89D2 /* KiwiGuiObject.h */,
 				2CAB59E01AAA3BEA00CB89D2 /* KiwiGuiPatcher.cpp */,
 				2CAB59E11AAA3BEA00CB89D2 /* KiwiGuiPatcher.h */,
-				2CAB59E21AAA3BEA00CB89D2 /* KiwiGuiPatcherManager.cpp */,
-				2CAB59E31AAA3BEA00CB89D2 /* KiwiGuiPatcherManager.h */,
+				2CAB5A0B1AAA463400CB89D2 /* KiwiGuiPatchManager.cpp */,
+				2CAB5A0C1AAA463400CB89D2 /* KiwiGuiPatchManager.h */,
+				2CAB59D91AAA3BEA00CB89D2 /* KiwiGuiDevice.cpp */,
+				2CAB59DA1AAA3BEA00CB89D2 /* KiwiGuiDevice.h */,
 			);
 			path = KiwiGuiModels;
 			sourceTree = "<group>";
@@ -576,6 +576,7 @@
 				8FA92C2F1A9F29EB006BAFC5 /* KiwiDspJuce.cpp in Sources */,
 				2CAB59FD1AAA3BEA00CB89D2 /* KiwiMouser.cpp in Sources */,
 				8FA92C461A9F2C76006BAFC5 /* KiwiObjectsBasicDefault.cpp in Sources */,
+				2CAB5A0D1AAA463400CB89D2 /* KiwiGuiPatchManager.cpp in Sources */,
 				2CAB59FC1AAA3BEA00CB89D2 /* KiwiKeyboarder.cpp in Sources */,
 				2CAB5A021AAA3BEA00CB89D2 /* KiwiGuiObject.cpp in Sources */,
 				2CAB5A091AAA3BEA00CB89D2 /* KiwiPatcherView.cpp in Sources */,
@@ -599,7 +600,6 @@
 				8F73A81A1A9F109E00B38565 /* KiwiDspContext.cpp in Sources */,
 				8F73A7E21A9EFFCB00B38565 /* KiwiPatch.cpp in Sources */,
 				8F73A81B1A9F109E00B38565 /* KiwiDspDevice.cpp in Sources */,
-				2CAB5A041AAA3BEA00CB89D2 /* KiwiGuiPatcherManager.cpp in Sources */,
 				8FA92C2B1A9F12A5006BAFC5 /* KiwiDspPortAudio.cpp in Sources */,
 				8F73A7B51A9EFFCB00B38565 /* KiwiClock.cpp in Sources */,
 				8F73A8191A9F109E00B38565 /* KiwiDspChain.cpp in Sources */,
