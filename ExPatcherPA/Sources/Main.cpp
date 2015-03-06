@@ -14,6 +14,32 @@ using namespace Kiwi;
 
 int main(int argc, const char * argv[])
 {
+    // Test : atom parse
+    string eval = "cata  toto 1 -3 5.4 -6.1 .90 -.99 - --9 ..9 99.8.7 99.-6 1.123e3 \"vava\" bb \" mojo jojo\" \"12\"  \"-12\" \\a \"non\"\"oui\"";
+    //string eval = "1, 4, 7.9";
+    cout << "eval : \"" << eval << "\"" << endl;
+    Vector atoms = Atom::parse(eval);
+    
+    cout << endl << "result :" << endl;
+    for (auto atom : atoms)
+    {
+        if (atom.isLong())
+        {
+            cout << "- atom long   : " << (long)atom << endl;
+        }
+        else if (atom.isDouble())
+        {
+            cout << "- atom double : " << (double)atom << endl;
+        }
+        else if (atom.isTag())
+        {
+            cout << "- atom Tag    : \"" << ((sTag)atom)->getName() << "\"" << endl;
+        }
+    }
+    
+    return 0;
+    
+    
     Dico bef;
     bef[Tag::create("b1")] = 1;
     bef[Tag::create("b2")] = 1;
@@ -41,15 +67,11 @@ int main(int argc, const char * argv[])
     zaza = {bef, dic, bof};
     cout << zaza << endl << endl << endl;
     
-    return 0;
-    
-    
-    
     
     sDspDeviceManager manager = make_shared<KiwiPortAudioDeviceManager>();
     if(manager)
     {
-        Console::device = manager;
+        Console::m_dsp_device = manager;
         manager->setSampleRate(44100);
         manager->setVectorSize(64);
         cout << "Port Audio Device : Sample Rate (" << manager->getSampleRate() << ") Vector Size (" << manager->getVectorSize() << ")" << endl;
@@ -75,7 +97,7 @@ int main(int argc, const char * argv[])
         }
         
         return 0;
-        sInstance instance = Instance::create(manager, "Instance");
+        sInstance instance = Instance::create(nullptr, manager, "Instance");
         if(instance)
         {
             try
