@@ -15,7 +15,7 @@ using namespace Kiwi;
 int main(int argc, const char * argv[])
 {
     // Test : atom parse
-    string eval = "cata  toto 1 -3 5.4 -6.1 .90 -.99 - --9 ..9 99.8.7 99.-6 1.123e3 \"vava\" bb \" mojo jojo\" \"12\"  \"-12\" \\a \"non\"\"oui\"";
+    string eval = "cata    toto 4 578 -007 5.4 0.79995 -6.1 .90 -.99 - --9 ..9 99.8.7 44 99.-6 1.123e3 \"vava\" bb \" mojo jojo\" \"12\"  \"-12\" \\a \"non\"\"oui\"  \" jambon ";
     //string eval = "1, 4, 7.9";
     cout << "eval : \"" << eval << "\"" << endl;
     Vector atoms = Atom::parse(eval);
