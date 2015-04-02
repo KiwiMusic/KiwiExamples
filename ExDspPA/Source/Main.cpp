@@ -12,12 +12,16 @@ using namespace Kiwi;
 
 int main(int argc, const char * argv[])
 {
+    cout << "Start" << endl;
     shared_ptr<DspDeviceManager> manager = make_shared<KiwiPortAudioDeviceManager>();
     if(manager)
     {
-        manager->setSampleRate(48000);
+        manager->start();
+        manager->setInputDevice("Built-in");
+        manager->setOutputDevice("Built-in");
+        manager->setSampleRate(44100);
         manager->setVectorSize(64);
-        
+        /*
         vector<string> names;
         cout << "Available Drivers : ";
         manager->getAvailableDrivers(names);
@@ -59,7 +63,7 @@ int main(int argc, const char * argv[])
         cout << "Devices : " << manager->getInputDeviceName() << ", " << manager->getOutputDeviceName() << endl;
         cout << "Ioputs : " << manager->getNumberOfInputs() << ", " << manager->getNumberOfOutputs() << endl;
         cout << "Sr & Vs : " << manager->getSampleRate() << ", " << manager->getVectorSize() << endl << endl;
-        
+        */
         sDspContext ctxt = make_shared<DspContext>(manager);
         if(ctxt)
         {
@@ -75,75 +79,52 @@ int main(int argc, const char * argv[])
             if(chain)
             {
                 ctxt->add(chain);
-                sDspNode Noise = make_shared<DspNoise>(chain);
+                sDspNode Noise = make_shared<DspNoise::White>(chain);
                 sDspNode Dac = make_shared<DspDac>(chain, vector<ulong>{(ulong)1, (ulong)2});
                 sDspLink cnectLeft = make_shared<DspLink>(chain, Noise, 0, Dac, 0);
                 sDspLink cnectRight = make_shared<DspLink>(chain, Noise, 0, Dac, 1);
                 chain->add(Noise);
                 chain->add(Dac);
-                chain->start();
-                chain->add(cnectRight);
                 
-                cout << "CPU : ";
-                int zaza = 20;
-                while (zaza--)
+                
+                
+                chain->add(cnectRight);
+                chain->add(cnectLeft);
+                chain->remove(cnectRight);
+                chain->remove(cnectLeft);
+                
+                
+                shared_ptr<DspPhasor<DspScalar>> Phasor = make_shared<DspPhasor<DspScalar>>(chain, 220.);
+                shared_ptr<DspOscillator<DspScalar>> Osc = make_shared<DspOscillator<DspScalar>>(chain, 0);
+                chain->add(Phasor);
+                chain->add(Osc);
+                cnectRight = make_shared<DspLink>(chain, Phasor, 0, Dac, 1);
+                chain->add(cnectRight);
+                cnectLeft = make_shared<DspLink>(chain, Osc, 0, Dac, 0);
+                chain->add(cnectLeft);
+                
+                try
                 {
-                    
-                    try
-                    {
-                        chain->remove(cnectRight);
-                    }
-                    catch (exception& e)
-                    {
-                        cout << e.what() << endl;
-                    }
-                    
-                    try
-                    {
-                        chain->add(cnectLeft);
-                    }
-                    catch (exception& e)
-                    {
-                        cout << e.what() << endl;
-                    }
-                    
-                    this_thread::sleep_for(chrono::milliseconds(100));
-                    
-                    try
-                    {
-                        chain->remove(cnectLeft);
-                    }
-                    catch (exception& e)
-                    {
-                        cout << e.what() << endl;
-                    }
-                    
-                    try
-                    {
-                        chain->add(cnectRight);
-                    }
-                    catch (exception& e)
-                    {
-                        cout << e.what() << endl;
-                    }
-                    
-                    this_thread::sleep_for(chrono::milliseconds(100));
-                    cout << ctxt->getCPU() << ", ";
-                    
-                    if(zaza == 10)
-                    {
-                        manager->setSampleRate(48000);
-                        manager->setVectorSize(64);
-                        cout << "Driver : " << manager->getDriverName() << endl;
-                        cout << "Devices : " << manager->getInputDeviceName() << ", " << manager->getOutputDeviceName() << endl;
-                        cout << "Ioputs : " << manager->getNumberOfInputs() << ", " << manager->getNumberOfOutputs() << endl;
-                        cout << "Sr & Vs : " << manager->getSampleRate() << ", " << manager->getVectorSize() << endl << endl;
-                        cout << "CPU : ";
-                    }
+                    chain->start();
+                }
+                catch(exception& e)
+                {
+                    cout << e.what() << endl;
+                    return 0;
+                }
+                
+                int zaza = 100;
+                while(zaza--)
+                {
+                    this_thread::sleep_for(chrono::milliseconds(25));
+                    //cout << ctxt->getCPU() << ", ";
+                    Phasor->setFrequency(zaza * 22.);
+                    Osc->setFrequency((120 - zaza) * 22.);
                 }
             }
         }
     }
+    cout << "End" << endl;
     
     return 0;
 }

@@ -27,6 +27,8 @@ int main(int argc, const char * argv[])
     bof[Tag::create("e5")] = {9, 8, 7};
     bof[Tag::create("e6")] = "Paul";
     bof[Tag::create("e7")] = bef;
+    bof[Tag::create("e8")] = dic;
+    bof[Tag::create("e9")] = bef;
     
     Atom zaza({"zaza", 12.3000, 4, Tag::create("zizi"), true, {1.3f, false, 16l, "zozo"}, 1, 2, 3, dic, "end"});
     cout << zaza << endl << endl << endl;
@@ -40,7 +42,7 @@ int main(int argc, const char * argv[])
     
     zaza = {bef, dic, bof};
     cout << zaza << endl << endl << endl;
-    
+
     return 0;
     
     
