@@ -707,7 +707,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../ThirdParty/PortAudio/lib/.libs,
-					/Users/Pierre/GitHub/KiwiExamples/ThirdParty/PortAudio/lib/.libs,
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ExPatcherPA;
@@ -732,7 +731,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					../ThirdParty/PortAudio/lib/.libs,
-					/Users/Pierre/GitHub/KiwiExamples/ThirdParty/PortAudio/lib/.libs,
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ExPatcherPA;

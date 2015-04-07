@@ -711,7 +711,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Pierre/GitHub/KiwiExamples/ThirdParty/PortAudio/lib/.libs,
+					../ThirdParty/PortAudio/lib/.libs,
 				);
 				LLVM_LTO = YES;
 				PRODUCT_NAME = ExDspPA;
@@ -732,7 +732,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Pierre/GitHub/KiwiExamples/ThirdParty/PortAudio/lib/.libs,
+					../ThirdParty/PortAudio/lib/.libs,
 				);
 				LLVM_LTO = YES;
 				PRODUCT_NAME = ExDspPA;
